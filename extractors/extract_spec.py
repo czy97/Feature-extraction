@@ -42,7 +42,7 @@ def spec(filepath: str, win_length: int = 25, hop_length: int  = 10,n_fft: int =
 
     S = librosa.core.stft(
         y, n_fft=n_fft, win_length=cur_win_length, hop_length=cur_hop_length)
-    S = np.log(np.abs(S) ** 2 + 1e-12)
+    S = librosa.core.power_to_db(np.abs(S)**2)
 
     return S.transpose()
 
