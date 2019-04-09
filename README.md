@@ -5,4 +5,7 @@
 - [Kymatio](https://www.kymat.io/) :a module for computing wavelet and scattering transforms  
 
 ## Implementation
-- LFCC
+- LFCC  
+- MFCC  
+- IMFCC 
+- SPEC
